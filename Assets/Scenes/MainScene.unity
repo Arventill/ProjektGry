@@ -16984,6 +16984,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 1919414838320945631, guid: 7043bb2e53f96944ebc75a7966b027f9,
+        type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1919414839354187424, guid: 7043bb2e53f96944ebc75a7966b027f9,
         type: 3}
       propertyPath: m_Layer
@@ -27851,8 +27856,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  mouseSens: 5000
-  playerBody: {fileID: 1117486626}
+  cameraSpeed: 500
+  Test: {x: 0, y: 0, z: 0}
+  Test2: {x: 0, y: 0, z: 0}
 --- !u!114 &1117486623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27879,12 +27885,6 @@ CapsuleCollider:
   m_Height: 2.576687
   m_Direction: 1
   m_Center: {x: -0.008043289, y: 1.3056015, z: 0.029273987}
---- !u!4 &1117486626 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1919414839354475176, guid: 7043bb2e53f96944ebc75a7966b027f9,
-    type: 3}
-  m_PrefabInstance: {fileID: 710229798}
-  m_PrefabAsset: {fileID: 0}
 --- !u!54 &1117486627
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40507,6 +40507,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1619232495}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1620686461 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1919414838320945618, guid: 7043bb2e53f96944ebc75a7966b027f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 710229798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1620686465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620686461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97a34787ee3cd0e4b94fce8f585c08f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  y: 1
+  cameraSpeed: 500
 --- !u!1001 &1621956239
 PrefabInstance:
   m_ObjectHideFlags: 0
