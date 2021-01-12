@@ -1,18 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
+    private float totalY = 0f;
     public float y = 0.0f;
-    public float TestCamPlusY;
-    public float actualRotation;
     public float cameraSpeed = 10.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        transform.rotation = new Quaternion(0,0,0,0);
     }
 
     // Update is called once per frame
@@ -20,14 +17,10 @@ public class CameraMove : MonoBehaviour
     {
         y = -1 * Input.GetAxisRaw("Mouse Y") * cameraSpeed * Time.deltaTime;
         
-        TestCamPlusY = transform.rotation.x + y;
-        actualRotation = this.transform.rotation.x;
-        
-
-
-        //if (transform.rotation.x + y > 0.40f && transform.rotation.x + y < -0.30f)
+        if (totalY + y < 40f && totalY + y > -60f)
         {
             transform.Rotate(y, 0, 0);
+            totalY += y;
         }
     }
 }
