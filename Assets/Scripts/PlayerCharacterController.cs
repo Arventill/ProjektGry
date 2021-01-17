@@ -14,6 +14,15 @@ public class PlayerCharacterController : MonoBehaviour
         {
             isGrounded = true;
         }
+        
+        if (collision.gameObject.tag == "Player")
+        {
+
+            Debug.Log("PLAYER!!!");
+            //GameObject exp = Instantiate(explosion, this.transform.position, Quaternion.identity);
+            //Destroy(exp, 0.5f);
+            //Destroy(this.gameObject);
+        }
     }
     void OnCollisionExit(Collision collision)
     {
@@ -34,6 +43,6 @@ public class PlayerCharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

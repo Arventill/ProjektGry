@@ -274,6 +274,14 @@
     <Compile Include="Assets\3DGamekitLite\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Conifers [BOTD]\CTI Runtime Components\Scripts\CTI_CustomWind.cs" />
     <Compile Include="Assets\Conifers [BOTD]\CTI Runtime Components\Scripts\CTI_Utils.cs" />
+    <Compile Include="Assets\Prefabs\Shell\DestroyShell.cs" />
+    <Compile Include="Assets\Prefabs\Shell\FixedUpdateMove.cs" />
+    <Compile Include="Assets\Prefabs\Shell\LateUpdateMove.cs" />
+    <Compile Include="Assets\Prefabs\Shell\SecondsUpdate.cs" />
+    <Compile Include="Assets\Prefabs\Shell\Shell.cs" />
+    <Compile Include="Assets\Prefabs\Shell\ShellMove.cs" />
+    <Compile Include="Assets\Prefabs\Shell\Shoot.cs" />
+    <Compile Include="Assets\Prefabs\Shell\UpdateMove.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
     <Compile Include="Assets\Scripts\GameFlowManager.cs" />
     <Compile Include="Assets\Scripts\Limits.cs" />
